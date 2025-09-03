@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { simpleBlogCard } from "./components/lib/interface";
+import { SimpleBlogCard } from "./components/lib/interface";
 import { client, urlFor } from "./components/lib/sanity";
 
 async function getData() {
@@ -19,7 +19,7 @@ async function getData() {
 }
 
 export default async function Home() {
-  const data: simpleBlogCard[] = await getData();
+  const data: SimpleBlogCard[] = await getData();
 
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 mt-5 gap-5'>

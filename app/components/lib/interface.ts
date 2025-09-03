@@ -1,16 +1,16 @@
-import type { SanityImageSource } from "@sanity/image-url";
+import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import type { PortableTextBlock } from "sanity";
 
 export interface SimpleBlogCard {
   title: string;
   smallDescription: string;
   currentSlug: string;
-  titleImage: SanityImageSource; 
+  titleImage: SanityImageSource;
 }
 
 export interface FullBlog {
   currentSlug: string;
   title: string;
-  content: PortableTextBlock[]; 
-  titleImage: SanityImageSource; 
+  content: PortableTextBlock[];
+  titleImage: SanityImageSource;
 }
