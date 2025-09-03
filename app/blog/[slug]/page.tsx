@@ -1,4 +1,4 @@
-import { FullBlog } from "@/app/components/lib/interface";
+
 import { client, urlFor } from "@/app/components/lib/sanity";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
